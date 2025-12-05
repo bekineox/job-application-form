@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ❗ FIRST INPUT FIELD WITH SPECIAL STYLE */
+input:first-of-type {
+  border-radius: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* FOCUS */
+input:focus,
+textarea:focus {
+  border-color: blue;
+}
+
+/* INVALID */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+/* VALID */
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+/* RADIO GROUP */
+.radio-group {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.radio-group input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  appearance: none;
+  border: 2px solid #666;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-right: 5px;
+}
+
+/* CHECKED RADIO STYLING */
+.radio-group input[type="radio"]:checked {
+  border-color: #0066ff;
+  background-color: #80b3ff;
+  box-shadow: 0 0 8px rgba(0, 102, 255, 0.5);
+}
+
+/* CHANGE LABEL COLOR WHEN RADIO CHECKED */
+.radio-group input[type="radio"]:checked + label {
+  color: #0066ff;
+  font-weight: bold;
+}
+
+/* SUBMIT BUTTON */
+button {
+  width: 400px;
+  height: 40px;
+  background-color: green;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* BUTTON HOVER */
+button:hover {
+  background-color: midnightblue;
+}
